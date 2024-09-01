@@ -4,6 +4,18 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 import Home from "./Home";
+import NewsList from './components/NewsList';
+
+const App = () => {
+  return (
+    <div>
+      <h1>NewsHub NG</h1>
+      <NewsList category="technology" country="ng" />
+    </div>
+  );
+};
+
+export default App;
 
 function App() {
   return (
